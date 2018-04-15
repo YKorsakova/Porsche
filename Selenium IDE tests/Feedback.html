@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://srvqbs.tcwd.fr/" />
+<title>Feedback</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Feedback</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/activites</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=i.glyphicon.glyphicon-comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=partners</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=caterer</td>
+	<td>23</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=animations</td>
+	<td>36</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//form[@id='form-feedback']/div/div/div/h4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.col-md-4.col-sm-6 &gt; h4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='form-feedback']/div/div[2]/div[2]/h4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='form-feedback']/div/div[2]/div[3]/h4</td>
+	<td>Annimations</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=animations</td>
+	<td>36</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=caterer</td>
+	<td>23</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=partners</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Retour</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=CRÉER UNE OPERATION</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

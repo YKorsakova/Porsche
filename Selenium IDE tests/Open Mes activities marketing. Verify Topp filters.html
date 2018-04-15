@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://srvqbs.tcwd.fr/" />
+<title>Open Mes activities marketing. Verify Topp filters</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Open Mes activities marketing. Verify Topp filters</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/planmarketing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//li[4]/a/span</td>
+	<td>MES ACTIVITES MARKETING</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=CRÉER UNE OPERATION</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Strasbourg</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Participation Roadshow 2018</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Evénement / Essai</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=target_id</td>
+	<td>label=Prospects</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=products_id</td>
+	<td>label=4 portes</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=state</td>
+	<td>StatutValidésNon validé</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=state</td>
+	<td>label=Non validé</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=activations_id</td>
+	<td>label=Financement</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=condition</td>
+	<td>label=Terminé</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=condition</td>
+	<td>EtatEn coursTerminéAnnulé</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=condition</td>
+	<td>label=Annulé</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.input-group-addon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.ui-icon.ui-icon-circle-triangle-e</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=26</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
