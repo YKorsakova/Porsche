@@ -1,4 +1,6 @@
-public class MyFirstJavaTest {
+package fr.Porsche.Automation;
+
+public class myFirstPorscheTest {
 
 public static void main(String[] args){
 
