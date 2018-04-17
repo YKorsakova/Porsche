@@ -1,0 +1,6896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://plateforme-marketing.pdms.fr/" />
+<title>Ressette Login_Logout with CP verification</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Ressette Login_Logout with CP verification</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=fieldset</td>
+	<td>BIENVENUE SUR L'ESPACE D'ADMINISTRATION DE VOTRE CENTRE PORSCHE <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> Connexion</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>65RtF7dm</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>monica.pelegrina@prestigi.ad</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.treeview.active &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=AUTRES REPORTINGS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Autres</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>35uKr8Uk</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>enric.valles@prestigi.ad</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=centre</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Evolution des reportings SAFE</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Dwi3C89b</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>julie.collet@porsche-annecy.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=AUTRES REPORTINGS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>hx296BwY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>jean-paul.gonguet@porsche-annecy.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Unattended leads hebdo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Autres</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>7wNyu28T</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>melanie.diez@porsche-antibes.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=AUTRES REPORTINGS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>bm7A2C3k</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>franck.kobylka@porsche-antibes.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=li.treeview.active &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=type</td>
+	<td>label=Calcul de ROI</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>6Cjq6Sr4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>cindy.szymczak@porsche-arpajon.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>YJ86brm8</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>helena.mignon@porsche-orleans.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=AUTRES REPORTINGS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Qualité de la BDD</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;0&quot;]</td>
+	<td>Tous</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>77qmyGU4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>philippe.arbogast@porsche-arpajon.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>f8Try5F7</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>magali.rallo@porsche-marseille.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>9kMi9z3P</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>laurent.bellemere@porsche-marseille.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>laetitia.lanfranchi@porsche-bastia.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>wj8aS7H8</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Unattended leads hebdo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>daniel.rognoni@porsche-bastia.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Wi39yGb7</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>mathilde.fourgeaud@porsche-bordeaux.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Td46sYw7</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=li.treeview.active &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>j.martins@porsche-bordeaux.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>W7d6Vd3x</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=AUTRES REPORTINGS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Autres</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>gregoire.lepallec@porsche-lorient.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>4Un56Ndc</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=AUTRES REPORTINGS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Autres</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;0&quot;]</td>
+	<td>Tous</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>am.militon@lorientracing.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>68sc2CkU</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Autres</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='page-autresreportings']/section/form/div[2]/div/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>frederic.ancel@porsche-brest.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>aCky2W29</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Unattended leads hebdo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>33qSn2Jc</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>clemence.tambosco@porsche-rouen.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Qualité de la BDD</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>5RUzaz76</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>raymond.narac@porsche-rouen.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Qualité de la BDD</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>sophie.leonard@porsche-clermont-ferrand.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>93V2xgEz</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Qualité de la BDD</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Evolution des reportings SAFE</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Autres</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;0&quot;]</td>
+	<td>Tous</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Unattended leads hebdo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>3j49CVvt</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>martin.valla@porsche-clermont-ferrand.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=centre</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.treeview.active &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Qualité de la BDD</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>Mathilde.FISCHER@passionautomobiles.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Lvy9m66R</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Autres</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>pa8Bu99K</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>contact@porsche-dijon.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Qualité de la BDD</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>audrey.reynier@porsche-frejus.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>8Kb35bzZ</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Qualité de la BDD</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>jean-marc.tetu@porsche-frejus.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>K6tp54rE</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Unattended leads hebdo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>romuald.guy@porsche-roissy.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>K66Jf3yt</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>frederic.djekerdjian@porsche-lille.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Sq5Grz23</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>christelle.genneson@porsche-lorraine.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>6d9ZAgc3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Autres</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>olivier.vagneur@porsche-lorraine.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>y96a4vWL</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Evolution des reportings SAFE</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>gwendolyne.coraud@porsche-lyon.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>vEnt8E29</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Evolution des reportings SAFE</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>jr.guigonnet@porsche-lyon.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>5bw52YgJ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>laurent.bellemere@porsche-marseille.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>9kMi9z3P</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>melanie.diez@porsche-monaco.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>7wNyu28T</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Evolution des reportings SAFE</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>stephane.colmart@porsche-monaco.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>FBhq3w53</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Evolution des reportings SAFE</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>lore.plaza@porsche-montpellier.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>8zM9j4aJ</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Evolution des reportings SAFE</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>jerome.lhoste@porsche-montpellier.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>9uD6pg6K</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Qualité de la BDD</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>contact@porsche-mulhouse.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>3dtm9BJ2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Qualité de la BDD</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>malaurie.darly@porsche-rennes.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>diC29D8f</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>malaurie.darly@porsche-rennes.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>diC29D8f</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;0&quot;]</td>
+	<td>Tous</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>denis.papin@porsche-nantes.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>u4kA99aW</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Evolution des reportings SAFE</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>cyril.patel@porsche-tours.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>3KuDf7c5</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>caroline.mousseigne@porsche-toulouse.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>7ff98TYf</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Evolution des reportings SAFE</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>frederic.real@porsche-toulouse.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>K4vTvc98</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Unattended leads hebdo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>camille.tual@porsche-reims.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>j4eX24kF</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Unattended leads hebdo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>jose.peccis@porsche-reims.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>f3b5PHp4</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Autres</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>erwan.riou@porsche-rennes.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>2dnK5B2i</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Unattended leads hebdo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>maud.gallice@porsche-roissy.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>hiuK293D</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Autres</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>Erika.CAMBIANICA@porsche-strasbourg.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>34kp3ABv</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Autres</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>frederic.kientz@porsche-strasbourg.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>mYMw834c</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>romain.godet@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>k7Me47Bw</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Autres</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>k7Me47Bw</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>romain.godet@porsche.fr</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>Fanny.CERAUDO@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>2L4Rxvd4</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;0&quot;]</td>
+	<td>Tous</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>Michel.MATHIEU@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>7emL96sU</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Qualité de la BDD</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>al.renaudin@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>d8EQp52d</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Qualité de la BDD</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>Diane.Durand@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>uSB7fu98</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>Remy.Cottu@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>nyG2c32D</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Unattended leads hebdo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>pa.gendre.ext@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Ked3Qi89</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=REPORTING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=type</td>
+	<td>label=Unattended leads hebdo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>sophie.weil@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Z2Fnm84e</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>Olivia.Nizard@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>2Lqzw3L8</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Autres</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>colas.henckes@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>4c5v9uZU</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Unattended leads hebdo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>franziska.legusquet@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>8d57NczJ</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>charles.dubois@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Syw3xU67</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>noemie.garabedian@tcwd.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>tcwd2018</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=AUTRES REPORTINGS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>equipe@pdms.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>7Csx4R9k</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Evolution des reportings SAFE</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>pierre.chauvin@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Jy8Dt6b9</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Avignon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;26&quot;]</td>
+	<td>Perpignan</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Andorre</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Antibes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;6&quot;]</td>
+	<td>Bastia</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;12&quot;]</td>
+	<td>Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;20&quot;]</td>
+	<td>Marseille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;21&quot;]</td>
+	<td>Monaco</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;22&quot;]</td>
+	<td>Montpellier</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;33&quot;]</td>
+	<td>Toulon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;34&quot;]</td>
+	<td>Toulouse</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=AUTRES REPORTINGS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>Maxime.POITEL@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>8f4FqvH3</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=MES ACTIVITES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;17&quot;]</td>
+	<td>Lorraine</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;9&quot;]</td>
+	<td>Caen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;11&quot;]</td>
+	<td>Dijon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;23&quot;]</td>
+	<td>Mulhouse</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;27&quot;]</td>
+	<td>Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;51&quot;]</td>
+	<td>Rouen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;32&quot;]</td>
+	<td>Strasbourg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;5&quot;]</td>
+	<td>Autres</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;0&quot;]</td>
+	<td>Tous</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;1&quot;]</td>
+	<td>Evolution des reportings SAFE</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Qualité de la BDD</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Unattended leads hebdo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>Jerome.LEHOUX@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>u55y7jSE</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;2&quot;]</td>
+	<td>Annecy</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;10&quot;]</td>
+	<td>Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;15&quot;]</td>
+	<td>Lille</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;13&quot;]</td>
+	<td>Grenoble</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;19&quot;]</td>
+	<td>Lyon Sud</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;18&quot;]</td>
+	<td>Lyon Nord</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;28&quot;]</td>
+	<td>Reims</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;30&quot;]</td>
+	<td>Roissy</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;3&quot;]</td>
+	<td>Qualité de la BDD</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>thibaut.agostini@porsche.fr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>brr299HQ</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Arpajon</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;7&quot;]</td>
+	<td>Bordeaux</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;8&quot;]</td>
+	<td>Brest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;14&quot;]</td>
+	<td>La Rochelle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;16&quot;]</td>
+	<td>Lorient</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;24&quot;]</td>
+	<td>Nantes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;25&quot;]</td>
+	<td>Orléans</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;29&quot;]</td>
+	<td>Rennes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;35&quot;]</td>
+	<td>Tours</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[7]/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-add-reporting-other</td>
+	<td>Charger un reporting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;4&quot;]</td>
+	<td>Calcul de ROI</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
