@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://srvqbs.tcwd.fr/" />
+<title>PM not valide. commentaires, Montant, Imprimer, Exporter, Valide PM. Deplier Replier tabs</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">PM not valide. commentaires, Montant, Imprimer, Exporter, Valide PM. Deplier Replier tabs</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=ul.treeview-menu.menu-open &gt; li &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>name=center</td>
+	<td>label=Centre Porsche Strasbourg</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=btn-unvalidate-plan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-unvalidate-plan</td>
+	<td>Non validé</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn-unvalidate-plan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.jconfirm-title</td>
+	<td>Attention</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.jconfirm-buttons &gt; button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.jconfirm-buttons &gt; button.btn.btn-primary</td>
+	<td>oui</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.jconfirm-buttons &gt; button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>name=center</td>
+	<td>label=Centre Porsche Strasbourg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-unvalidate-plan</td>
+	<td>Non validé</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=btn-unvalidate-plan</td>
+	<td>Non validé</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn-unvalidate-plan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.jconfirm-title</td>
+	<td>Attention</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.jconfirm-buttons &gt; button.btn.btn-primary</td>
+	<td>oui</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.jconfirm-buttons &gt; button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>name=center</td>
+	<td>label=Centre Porsche Strasbourg</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>bmuser1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=ul.treeview-menu.menu-open &gt; li &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='page-planmarketing']/section/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='page-planmarketing']/section/div[2]/div</td>
+	<td>Seuls les champs en bleu sont à renseigner.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=comment-cp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=comment-cp</td>
+	<td>Automation test Yelena</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='page-planmarketing']/section/div[3]/div/div/div[3]/h3</td>
+	<td>Votre commentaireEnregistrer</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-validate</td>
+	<td>Valider et envoyer</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn-validate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.jconfirm-buttons &gt; button.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.jconfirm-buttons &gt; button.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Imprimer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Exporter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.fold-text-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='page-planmarketing']/section/div[2]/div[3]/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='page-planmarketing']/section/div[2]/div[4]/div/div/table/tbody/tr[2]/td[2]</td>
+	<td>PCCF : Site &gt; 120 VN : Soutien d'un pilote, le budget peut être partagé entre plusieurs CP d'un même groupe : budget estimatif par CP</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='page-planmarketing']/section/div[2]/div[4]/div/div/table/tbody/tr[2]/td[5]/textarea</td>
+	<td>Automation test Yelena</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='page-planmarketing']/section/div[2]/div[4]/div/div/table/tbody/tr[2]/td[5]/a[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='page-planmarketing']/section/div[2]/div[4]/div/div/table/tbody/tr[2]/td[5]/a[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='page-planmarketing']/section/div[2]/div[4]/div/div/table/tbody/tr[2]/td[5]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='page-planmarketing']/section/div[2]/div[4]/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Enregistrer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.toast-message</td>
+	<td>Commentaire enregistré avec succès</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=comment-cp</td>
+	<td>Automation test Yelena</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=btn-validate</td>
+	<td>Valider et envoyer</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn-validate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.jconfirm-buttons &gt; button.btn.btn-primary</td>
+	<td>Valider et envoyer</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.jconfirm-buttons &gt; button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='page-planmarketing']/section/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
