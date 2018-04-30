@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://srvqbs.tcwd.fr/" />
+<title>Login-Logout-Login</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Login-Logout-Login</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//form[@id='form-login']/fieldset/label[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//table[@id='table-operations']/tbody/tr[3]/td[11]/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='table-operations']/tbody/tr[3]/td[11]/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.mt-sm</td>
+	<td>ANDO - POF-M-GOLF-2018 - 01/04/2018 - 3</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//form[@id='form-feedback']/div/div/div[3]/h4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=place</td>
+	<td>Strasburg</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=partners</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.col-md-4.col-sm-6 &gt; h4</td>
+	<td>Partenaires</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='form-feedback']/div/div[3]/div[2]/h4</td>
+	<td>Give aways</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=give_aways</td>
+	<td>Test 2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=caterer</td>
+	<td>Test 3</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='form-feedback']/div/div[2]/div[2]/h4</td>
+	<td>Traiteur</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='form-feedback']/div/div[2]/div[3]/h4</td>
+	<td>Annimations</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=animations</td>
+	<td>Animation</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='form-feedback']/div/div[3]/div/h4</td>
+	<td>PLV présentes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='form-feedback']/div/div[4]/div/h4</td>
+	<td>Ambiance</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='form-feedback']/div/div[4]/div[2]/h4</td>
+	<td>Théatralisation</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='form-feedback']/div/div[4]/div[3]/h4</td>
+	<td>COM SITES LOCAUX &amp; FACEBOOK</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ambience</td>
+	<td>Test6 </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=theatration_vehicle</td>
+	<td>Test 7</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=communication</td>
+	<td>Test 8</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=test_yes_no</td>
+	<td>Test 6</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=test_communication</td>
+	<td>Test 9</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=comment</td>
+	<td>Comments ! </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[contains(@src,'http://srvqbs.tcwd.fr/uploads/feedbacks/0/fbe05abd7dff5b4ae9b2c0279d466246.jpg')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.lb-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.lb-prev</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.lb-prev</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.lb-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Retour</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='table-operations']/tbody/tr[3]/td[11]/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Exporter en PDF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

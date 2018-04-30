@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://srvqbs.tcwd.fr/" />
+<title>Open Calendrier page. Verify Events by Jour, Semaine, Mois, Annee. Top filters verify events</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Open Calendrier page. Verify Events by Jour, Semaine, Mois, Annee. Top filters verify events</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[5]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h2</td>
+	<td>avril 2018</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='calendar']/div/div[2]/div/button</td>
+	<td>Jour</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=li.treeview.active &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='calendar']/div/div[2]/div/button</td>
+	<td>Jour</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='calendar']/div/div[2]/div/button[2]</td>
+	<td>Semaine</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='calendar']/div/div[2]/div/button[3]</td>
+	<td>Mois</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='calendar']/div/div[2]/div/button[4]</td>
+	<td>Année</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='calendar']/div/div[2]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='calendar']/div/div[2]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='calendar']/div/div[2]/div/button[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='calendar']/div/div[2]/div/button[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>7000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.fc-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Budget</td>
+	<td>Budget</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Planifier</td>
+	<td>Planifier</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Saisie des dépenses</td>
+	<td>Saisie des dépenses</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Saisie des feedbacks</td>
+	<td>Saisie des feedbacks</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.fc-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Février</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.fc-title</td>
+	<td>Essais hiver</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='calendar']/div[2]/div/table/tbody/tr/td[4]/div[3]/div/div/div[2]/table/tbody/tr[2]/td[2]/a/div/span</td>
+	<td>Festival automobile international</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='calendar']/div[2]/div/table/tbody/tr/td[4]/div[3]/div/div[2]/div[2]/table/tbody/tr[3]/td[2]/a/div/span</td>
+	<td>Rétromobile</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='calendar']/div[2]/div/table/tbody/tr/td[6]/div[3]/div/div[2]/div[2]/table/tbody/tr[2]/td[5]/a/div/span</td>
+	<td>Salon de genève</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='calendar']/div[2]/div/table/tbody/tr[2]/td[2]/div[3]/div/div/div[2]/table/tbody/tr[5]/td[6]/a/div/span</td>
+	<td>Trackday POF</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='calendar']/div[2]/div/table/tbody/tr[2]/td[2]/div[3]/div/div[2]/div[2]/table/tbody/tr[6]/td[7]/a/div/span</td>
+	<td>Corsica Porsche</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='calendar']/div[2]/div/table/tbody/tr[2]/td[4]/div[3]/div/div/div[2]/table/tbody/tr[9]/td/a/div/span</td>
+	<td>Spring meeting</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filters_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='calendar-wrapper']/div/div[2]/div/div/div/div/div[2]/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filters_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filters_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='calendar-wrapper']/div/div[2]/div/div/div/div/div[3]/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filters_3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filters_4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filters_3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='calendar']/div[2]/div/table/tbody/tr[3]/td[6]/div[3]/div/div[2]/div[2]/table/tbody/tr[44]/td/a/div/span</td>
+	<td>Chantilly</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='calendar']/div[2]/div/table/tbody/tr[3]/td[6]/div[3]/div/div[5]/div[2]/table/tbody/tr[43]/td/a/div/span</td>
+	<td>Meeting 911 Classic</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
