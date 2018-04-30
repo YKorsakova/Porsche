@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://srvqbs.tcwd.fr/" />
+<title>Open Mes activities marketing. Verify Operation details, Etapes and tasks</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Open Mes activities marketing. Verify Operation details, Etapes and tasks</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>cpuser1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='table-operations']/tbody/tr[8]/td[12]/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.col-md-6 &gt; h4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.col-md-6 &gt; h4</td>
+	<td>Diagramme de Gantt</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=start_date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=start_date</td>
+	<td>09/04/2018</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='tasks-wrapper']/table/tbody/tr[17]/td[3]</td>
+	<td>10/04/2018</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='tasks-wrapper']/table/tbody/tr[13]/td[4]</td>
+	<td>28/05/2018</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=td.text-left</td>
+	<td>Phase préparatoire</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='tasks-wrapper']/table/tbody/tr[8]/td</td>
+	<td>Ciblage</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='tasks-wrapper']/table/tbody/tr[13]/td</td>
+	<td>Routage</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='tasks-wrapper']/table/tbody/tr[17]/td</td>
+	<td>Reporting</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

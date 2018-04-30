@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://srvqbs.tcwd.fr/" />
+<title>Open Mes activities marketing. Verify page Table, Top filters, table filters, Recherche une ligne, lignes</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Open Mes activities marketing. Verify page Table, Top filters, table filters, Recherche une ligne, lignes</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=fieldset</td>
+	<td>BIENVENUE SUR L'ESPACE D'ADMINISTRATION DE VOTRE CENTRE PORSCHE <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> Connexion</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=campaign_id</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;0&quot;]</td>
+	<td>Campagne</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Autres</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Autres Evénement</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Autres Evénement après-vente</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Autres Evénement essai</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Autres Guerilla</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Autres Information CP</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Autres Information produit</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Autres Media</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Autres Offre SAV</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Autres Pack Evénement</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Autres Pack Evénement Essais</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Autres Presse</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=EVENT G&amp;M</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Guerilla</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Lancement</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Media</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Participation 24 Heures du Mans 2018</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Participation 70 ans de Porsche</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Participation Classic Day 2018</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#type_id &gt; option[value=&quot;0&quot;]</td>
+	<td>Type opération</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Autres</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Evénement</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Evénement / Essai</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Evénement Après Vente</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Guerilla</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Information CP</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Information produit</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Media</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Offres Sav</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Packs Evénement</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Packs Evénement Essais</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Presse</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=target_id</td>
+	<td>label=Anciens Clients</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=target_id</td>
+	<td>label=Clients</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=target_id</td>
+	<td>label=Lead</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=target_id</td>
+	<td>label=Prospects</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=target_id</td>
+	<td>Ciblage</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=products_id</td>
+	<td>Produit</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=products_id</td>
+	<td>label=4 portes</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=products_id</td>
+	<td>label=Hybrides</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=products_id</td>
+	<td>label=Sportives</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=products_id</td>
+	<td>label=Toute la gamme</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=state</td>
+	<td>Statut</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=state</td>
+	<td>label=Validés</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=state</td>
+	<td>label=Non validé</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=activations_id</td>
+	<td>Activation</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=activations_id</td>
+	<td>label=Classic</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=activations_id</td>
+	<td>label=Connect</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=activations_id</td>
+	<td>label=Financement</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=activations_id</td>
+	<td>label=Marketing viral</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=activations_id</td>
+	<td>label=Motorsport</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=activations_id</td>
+	<td>label=Porsche approved</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=activations_id</td>
+	<td>label=Relations publiques</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=activations_id</td>
+	<td>label=SAV</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=activations_id</td>
+	<td>label=VN</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=activations_id</td>
+	<td>label=VO</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=models_id</td>
+	<td>Modèle</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=models_id</td>
+	<td>label=911</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=models_id</td>
+	<td>label=Box/Caym</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=models_id</td>
+	<td>label=Cayenne</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=models_id</td>
+	<td>label=Macan</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=models_id</td>
+	<td>label=Panamera</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=condition</td>
+	<td>Etat</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=condition</td>
+	<td>label=Terminé</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=condition</td>
+	<td>label=Annulé</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Annecy</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Antibes</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Arpajon</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Avignon</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Bastia</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Bordeaux</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Brest</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Caen</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Clermont-Ferrand</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Dijon</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Fréjus</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Grenoble</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=La Rochelle</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Lille</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Lorient</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Lorraine</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Lyon Nord</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Lyon Sud</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Marseille</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Monaco</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Montpellier</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Mulhouse</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Nantes</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Orléans</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Perpignan</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Porsche Distribution SAS</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Reims</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Roissy</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Strasbourg</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Toulon</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Toulouse</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Tours</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Porsche France</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Rouen</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=CRÉER UNE OPERATION</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=CRÉER UNE OPERATION</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=center_id</td>
+	<td>label=Fréjus</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Evénement / Essai</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Evénement</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Participation Essais 718 Macan 2018</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn.btn-black</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=td.dataTables_empty</td>
+	<td>No matching records found</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=CRÉER UNE OPERATION</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=center_id</td>
+	<td>label=Fréjus</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Evénement</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Participation Essais 718 Macan 2018</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=supports[0][support_id]</td>
+	<td>label=Mailing avec ID/MDP</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=supports[0][source_id]</td>
+	<td>label=Location / Achat de BDD</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=supports[0][target_id]</td>
+	<td>label=Prospects</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=activations_id_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=products_id_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=models_id_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=start_date</td>
+	<td>01/04/2018</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=responsible_id</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=responsible_id</td>
+	<td>label=bm</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=button.btn.btn-black</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn.btn-black</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=centre</td>
+	<td>label=Fréjus</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=td.dataTables_empty</td>
+	<td>No matching records found</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -87,7 +87,7 @@
 	<td>label=Centre Porsche Strasbourg</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAt</td>
 	<td>id=btn-validate-plan</td>
 	<td></td>
 </tr>
@@ -97,9 +97,19 @@
 	<td>Attention</td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>clickAt</td>
 	<td>css=div.jconfirm-buttons &gt; button.btn.btn-primary</td>
 	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>name=center</td>
+	<td>label=Centre Porsche Strasbourg</td>
 </tr>
 <tr>
 	<td>waitForText</td>
@@ -116,7 +126,6 @@
 	<td>css=label</td>
 	<td>BIENVENUE SUR L'ESPACE D'ADMINISTRATION</td>
 </tr>
-
 </tbody></table>
 </body>
 </html>
