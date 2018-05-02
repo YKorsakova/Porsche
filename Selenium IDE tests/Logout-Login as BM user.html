@@ -12,13 +12,33 @@
 <tr><td rowspan="1" colspan="3">Logout-Login as BM user</td></tr>
 </thead><tbody>
 <tr>
-	<td>open</td>
-	<td>/calendrier</td>
+	<td>pause</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>link=Déconnexion</td>
+	<td>open</td>
+	<td>/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/calendrier</td>
 	<td></td>
 </tr>
 <tr>
@@ -41,7 +61,11 @@
 	<td>id=btn_login</td>
 	<td></td>
 </tr>
-
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
 </tbody></table>
 </body>
 </html>

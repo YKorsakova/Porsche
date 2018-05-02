@@ -12,8 +12,38 @@
 <tr><td rowspan="1" colspan="3">Open Actualites page. Open Article page. Verify elements at the pages</td></tr>
 </thead><tbody>
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/accueil</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/login</td>
 	<td></td>
 </tr>
 <tr>
@@ -69,6 +99,11 @@
 <tr>
 	<td>waitForElementPresent</td>
 	<td>css=button.btn.item-btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>link=Déconnexion</td>
 	<td></td>
 </tr>
 </tbody></table>
