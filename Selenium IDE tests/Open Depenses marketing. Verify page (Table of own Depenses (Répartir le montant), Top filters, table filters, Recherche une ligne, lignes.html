@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://srvqbs.tcwd.fr/" />
+<title>Open Depenses marketing. Verify page (Table of own Depenses (Répartir le montant), Top filters, table filters, Recherche une ligne, lignes</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Open Depenses marketing. Verify page (Table of own Depenses (Répartir le montant), Top filters, table filters, Recherche une ligne, lignes</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>cpuser1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=DEPENSES MARKETING</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn-add-spending</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=operation_id</td>
+	<td>label=ANNE - POF-M-MOTORSPORT-201 - 20/04/2018 - 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.col-md-3 &gt; div.form-group &gt; div.input-group &gt; span.input-group-addon &gt; #btn_start</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=div.col-md-3 &gt; div.form-group.from-group-select &gt; #type_spending_id</td>
+	<td>label=Annonce Presse</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=state_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=amount</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=amount</td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//table[@id='table-spendings']/tbody/tr/td[4]</td>
+	<td>ANNE - POF-M-MOTORSPORT-201 - 20/04/2018 - 1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Autres Evénement après-vente</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=campaign_id</td>
+	<td>label=Campagne</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=ANNE - POF-M-MOTORSPORT-201 - 20/04/2018 - 1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_id</td>
+	<td>label=Opérations</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=supports_id</td>
+	<td>label=Packs avec ID/MDP</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=supports_id</td>
+	<td>label=Support</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=type_spending_id</td>
+	<td>label=Annonce Presse</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.fa.fa-pencil</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=amounts_centers[0][amount]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=amounts_centers[0][amount]</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='amount-to-clone']/div[4]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=amounts_centers[1][center_id]</td>
+	<td>label=Annecy</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=amounts_centers[0][center_id]</td>
+	<td>label=Grenoble</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.fa.fa-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.fa.fa-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=td.dataTables_empty</td>
+	<td>Aucune donnée trouvée</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=table-spendings_info</td>
+	<td>Showing 0 to 0 of 0 entries</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='btn-wrapper']/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='btn-wrapper']/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Export</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
