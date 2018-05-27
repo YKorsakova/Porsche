@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://srvqbs.tcwd.fr/" />
+<title>BO. Create and remove user from BO</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">BO. Create and remove user from BO</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[11]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/admin/utilisateurs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Ajouter un utilisateur</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>user@user.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=first_name</td>
+	<td>User for test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=last_name</td>
+	<td>User for test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>User@user.com</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=group_id</td>
+	<td>label=Centre Porsche</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.box-white</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>12345678</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-black</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[type=&quot;search&quot;]</td>
+	<td>User@user.com</td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>id=table-utilisateurs.1.1</td>
+	<td>User for test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>User@user.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>12345678</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn_login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[11]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/admin/utilisateurs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[type=&quot;search&quot;]</td>
+	<td>User@user.com</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=input[type=&quot;search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[type=&quot;search&quot;]</td>
+	<td>user@user.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.fa.fa-remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Déconnexion</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
